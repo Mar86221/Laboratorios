@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Labo 03</string>
+    <string name="_0_05">$0.05</string>
+    <string name="_0_10">$0.10</string>
+    <string name="_1_00">$1.00</string>
+    <string name="_0_25">$0.25</string>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/moneyAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Cantidad de dinero"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/MontoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        tools:text="0"
+        android:textColor="@color/black"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moneyAmount"
+        android:inputType="numberDecimal"
+        />
+
+    <ImageView
+        android:id="@+id/Moneda5"
+        android:layout_width="124sp"
+        android:layout_height="124sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Moneda10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MontoTotal"
+        app:layout_constraintVertical_bias="0.144"
+        app:srcCompat="@drawable/five_cents" />
+
+    <ImageView
+        android:id="@+id/Moneda10"
+        android:layout_width="124sp"
+        android:layout_height="124sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Moneda5"
+        app:layout_constraintTop_toBottomOf="@+id/MontoTotal"
+        app:layout_constraintVertical_bias="0.141"
+        app:srcCompat="@drawable/ten_cents" />
+
+    <ImageView
+        android:id="@+id/Moneda25"
+        android:layout_width="124sp"
+        android:layout_height="124sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Moneda1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Moneda5"
+        app:layout_constraintVertical_bias="0.53"
+        app:srcCompat="@drawable/quarter" />
+
+    <ImageView
+        android:id="@+id/Moneda1"
+        android:layout_width="124sp"
+        android:layout_height="124sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Moneda25"
+        app:layout_constraintTop_toBottomOf="@+id/Moneda10"
+        app:layout_constraintVertical_bias="0.53"
+        app:srcCompat="@drawable/one_dollar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-10dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/_0_05"
+        app:layout_constraintEnd_toStartOf="@+id/Moneda10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Moneda5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/_0_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Moneda5"
+        app:layout_constraintTop_toBottomOf="@+id/Moneda10" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1_00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Moneda1"
+        app:layout_constraintStart_toStartOf="@+id/Moneda1"
+        app:layout_constraintTop_toBottomOf="@+id/Moneda1" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0_25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Moneda25"
+        app:layout_constraintStart_toStartOf="@+id/Moneda25"
+        app:layout_constraintTop_toBottomOf="@+id/Moneda25"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
