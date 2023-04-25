@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="qualification_input_text" type="id"></item>
+    <item name="description_input_text" type="id"></item>
+    <item name="category_name_text" type="id"></item>
+    <item name="name_input_text" type="id"></item>
+</resources>

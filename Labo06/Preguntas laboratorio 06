@@ -1,0 +1,4 @@
+¿En qué consiste el patrón de diseño Repository? es un patrón de diseño que aísla la capa de datos del resto de la app.
+
+
+¿Qué es el ViewModel? es un patrón de arquitectura de software. Se caracteriza por tratar de desacoplar lo máximo posible la interfaz de usuario de la lógica de la aplicación.
