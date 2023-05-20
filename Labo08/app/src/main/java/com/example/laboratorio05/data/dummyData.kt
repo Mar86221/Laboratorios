@@ -18,5 +18,4 @@ val qualification2 = "8.7"
 var movies = mutableListOf(
     MovieModel(name, category, description, qualification),
     MovieModel(name2, category2, description2, qualification2)
-
 )

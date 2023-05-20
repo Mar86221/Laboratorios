@@ -72,7 +72,6 @@ class billboardFragment : Fragment() {
 
     private fun showSelectedItem(movie: MovieModel){
         viewModel.setSelectedMovie(movie)
-        //Log.d("PUTA2",viewModel.name.value!!)
   findNavController().navigate(R.id.action_billboardFragment_to_movieFragment)
     }
 
